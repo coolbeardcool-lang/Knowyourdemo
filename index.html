@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>認識台灣民主先驅</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>認識台灣民主先驅</h1>
+    <p class="subtitle">翻牌配對，認識歷史人物</p>
+  </header>
+
+  <div id="game-container">
+    <div id="stats">
+      <span id="moves-counter">翻牌次數：0</span>
+      <span id="matches-counter">配對成功：0</span>
+      <button id="restart-btn">重新開始</button>
+    </div>
+    <div id="board"></div>
+  </div>
+
+  <div id="modal" class="hidden">
+    <div id="modal-content">
+      <button id="modal-close">✕</button>
+      <h2 id="modal-name"></h2>
+      <div id="modal-media"></div>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
